@@ -31,7 +31,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
+            key-positions = <11 10>;
         };
 
         shift_tab {
@@ -39,19 +39,9 @@
             key-positions = <12 13>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
         };
     };
 
@@ -80,10 +70,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R          &kp T                                                                  &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F          &kp G        &kp LS(LG(S))                             &kp MINUS       &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V          &kp B        &kp INT_MUHENKAN                          &kp INT_HENKAN  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&lt 6 ESC         &kp LEFT_WIN  &kp LEFT_ALT  &mt LCTRL TAB  &lt 2 SPACE  &lt_to_layer_0 3 LANG_ZENKAKUHANKAKU      &kp BACKSPACE   &lt 1 ENTER                             &kp DEL
+&kp Q             &kp W         &kp E         &kp R      &kp T                                                 &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F      &kp G        &kp LS(LG(S))             &kp SEMI       &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B        &kp F13                   &kp F14        &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&lt 6 ESC         &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &lt 2 SPACE  &lt_to_layer_0 3 TAB      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp LC(TAB) LC(LS(TAB))>;
@@ -91,10 +81,10 @@
 
         FUNCTION {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                      &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9          &kp NUMBER_0
-&kp EXCL      &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PRCNT     &trans      &trans  &kp CARET     &kp AMPS      &kp STAR      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans        &trans        &trans        &trans                &trans
-&trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans                                                          &trans
+&kp EXCL   &kp AT_SIGN    &kp HASH   &kp DOLLAR         &kp PRCNT                      &kp CARET  &kp AMPS   &kp STAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp SEMI   &kp BACKSLASH  &kp GRAVE  &kp SINGLE_QUOTE   &trans     &trans      &trans  &trans     &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&kp COLON  &kp PIPE       &kp TILDE  &kp DOUBLE_QUOTES  &trans     &trans      &trans  &trans     &kp UNDER  &kp PLUS   &kp LEFT_BRACE        &kp RIGHT_BRACE
+&trans     &trans         &trans     &trans             &trans     &trans      &trans  &trans                                                 &trans
             >;
         };
 
